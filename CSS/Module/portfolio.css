@@ -1,0 +1,79 @@
+.portfolio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 5rem;
+}
+.portfoliolink {
+    height: 100%;
+    background-color: var(--txanddarkbg);
+}
+.portfolioimg {
+    display: block;
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+.portfolio p {
+    font-size: 2rem;
+    color: var(--lightpink);
+    text-align: center;
+}
+.portfolio span {
+    display: none;
+}
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+    .portfolio{
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio p {
+        display: none;
+    }
+    .portfolioimg {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .portfoliolink {
+        background: inherit;
+    }
+}
+/*animation*/
+.portfoliolink:hover span {
+    display: inline-block;
+}
+.portfoliolink:hover p {
+    animation-name: linkanimation;
+    animation-duration: 1.6s;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+}
+.portfoliolink:hover .firstchevron {
+    animation-name: linkanimation;
+    animation-duration: 1.6s;
+    animation-delay: 0.8s;
+    animation-iteration-count: infinite;
+}
+.portfoliolink:hover .secondchevron {
+    animation-name: linkanimation;
+    animation-duration: 1.6s;
+    animation-delay: 1.2s;
+    animation-iteration-count: infinite;
+}
+.portfoliolink:hover .thirdchevron {
+    animation-name: linkanimation;
+    animation-duration: 1.6s;
+    animation-delay: 1.6s;
+    animation-iteration-count: infinite;
+}
+@keyframes linkanimation {
+    from {
+        color: var(--lightpink);
+        margin-left: 0.2rem;
+    }
+    to {
+        color: var(--txandlightbg);
+        margin-left: 0.5rem;
+    }
+}
