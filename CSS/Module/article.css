@@ -1,6 +1,5 @@
 /*General properties for all pages*/
 article {
-    min-height: 30rem;
     margin: 2rem auto;
     padding: 1rem 3rem;
     border : 0.2rem solid var(--darkpink);
@@ -28,12 +27,15 @@ article ul {
 }
 /*Properties for the page Qui suis-je?*/
 .quisuisjeimg {
-    float: left;
+    display: block;
     width: 20%;
-    margin-top: 3rem;
     margin-right: 2rem;
     border: 0.3rem solid var(--txanddarkbg);
     border-radius: 1rem;
+}
+.articletext {
+    display: flex;
+    align-items: center;
 }
 /*Properties for the page autoformation*/
 .articleheader p {
