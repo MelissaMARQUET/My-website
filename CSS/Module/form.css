@@ -1,0 +1,54 @@
+/*The form is used on the contact page
+It is inactive for the moment*/
+form {
+    width: 70%;
+    margin: 4rem auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    border: 0.3rem solid var(--txanddarkbg);
+    border-radius: 1rem;
+    box-shadow: 0.6rem 0.6rem 0.6rem var(--txanddarkbg);
+    font-size: 2rem;
+}
+form h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: var(--darkpink);
+}
+form p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: var(--lightpink);
+}
+label {
+    margin: 0.8rem 0;
+}
+input, textarea {
+    padding: 1rem;
+    background-color: var(--txandlightbg);
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
+}
+input[type="submit"] {
+    align-self: center;
+    margin-top: 2rem;
+    padding: 2px;
+    width: 50%;
+    min-width: fit-content;
+    font-size: 1em;
+}
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    form {
+        width: 90%;
+    }
+}
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+    form {
+        width: 100%;
+    }
+}

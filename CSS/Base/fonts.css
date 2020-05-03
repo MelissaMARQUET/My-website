@@ -1,0 +1,13 @@
+/*Icons from fontawesome*/
+@import url(https://use.fontawesome.com/releases/v5.8.2/css/all.css);
+/*____Google Font Poppins_____
+*This font is used for the entire website
+*/
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/Poppins/Poppins-Bold.ttf);/*700*/
+    src: url(fonts/Poppins/Poppins-Italic.ttf);
+    src: url(fonts/Poppins/Poppins-Light.ttf);/*300*/
+    src: url(fonts/Poppins/Poppins-Medium.ttf);/*500*/
+    src: url(fonts/Poppins/Poppins-Regular.ttf);/*400*/
+}

@@ -1,0 +1,13 @@
+:root {
+    --mainbg: radial-gradient(black, #363838);
+    --txandlightbg: #F7F7CF;
+    --txanddarkbg: #4C4C4C;
+    --lightpink: #FFAAD4;
+    --darkpink: #DD026C;
+    --link: #7F007F;
+    --linkhover: #7F003F;
+}
+/* Legend for the color names :
+tx -> text
+bg -> background
+*/

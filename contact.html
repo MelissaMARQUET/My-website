@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Mélissa MARQUET, développeuse web, me contacter" content="En auto-reconversion profesionnelle, j'apprends le métier de développeuse web. A terme je souhaiterais être développeuse
+    fullstack. Découvrez mon parcours professionnel, ainsi que l'évolution de mes compétences en développement.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me contacter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--header is copied on the pages until I learn PHP-->
+    <header class="header">
+        <img src="img/Header.jpg" alt="ma photo de présentation">
+        <h1><strong class="name">Mélissa MARQUET</strong> Développeuse web frontend</h1>
+        <nav>
+            <!--For the mobile menu-->
+            <label for="menu-mobile" class="menu-mobile">Menu</label>
+            <input type="checkbox" id="menu-mobile" role="button">
+            <ul class="headernav">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="qui-suis-je.html">Qui suis-je ?</a></li>
+                <li><a href="autoformation.html">Ma formation</a></li>
+                <li><a href="competences.html">Mes compétences</a></li>
+                <li><a href="portfolio.html">Mon portfolio</a></li>
+                <li><a href="cv.html">Mon  CV</a></li>
+                <li><a href="contact.html">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Me contacter</h1>
+            <p class="contactp">Recruteurs : vous pouvez télécharger mon CV sur <a href="https://www.monster.fr" target="_blank">Monster</a> ou sur <a href="https://www.pole-emploi.fr/accueil/" target="_blank">Pôle emploi</a>.</p>
+                <nav class="contactnav">
+                    <a href="https://www.linkedin.com/in/melissamarquet" target="_blank" alt="link to my linkedin profile"><i class="fab fa-linkedin"></i> Linkedin</a>
+                    <a href="https://www.facebook.com/Melissa.MARQUET.DevWeb" target="_blank" alt="link to my facebook profile"><i class="fab fa-facebook-square"></i> Facebook</a>
+                    <a href="https://twitter.com/MelissaMarquet" target="_blank" alt="link to my twitter profile"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="https://github.com/MelissaMARQUET/" target="_blank" alt="link to my github" id="profile-link"><i class="fab fa-github"></i> Github</a>
+                </nav>
+            <form action="linkinactive.html">
+                <h2>Formulaire de contact</h2>
+                <p><!--will be removed when form will be active--><em>(Attention ce formulaire n'est pas actif pour le moment)</em></p>
+                <label for="name">Nom</label>
+                <input type="text" name="Nom" id="name" placeholder="Votre nom">
+                <label for="email">Adresse email</label>
+                <input type="email" name="email" id="email" placeholder="Votre adresse e-mail">
+                <label for="sujet">Sujet</label>
+                <input type="text" id="sujet" placeholder="Sujet de votre message">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="120" rows="10"></textarea>
+                <input type="submit" value="Envoyer mon message">
+            </form>
+    </main>
+<!--footer is copied on the pages until I learn PHP-->
+    <footer>
+        <p>&copy; 2020 Mélissa MARQUET - Tous droits réservés -  Toute reproduction interdite sans l'autorisation de l'auteur.</p>
+    </footer>
+</body>
+</html>

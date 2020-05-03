@@ -1,0 +1,81 @@
+/*General properties for all pages*/
+article {
+    min-height: 30rem;
+    margin: 2rem auto;
+    padding: 1rem 3rem;
+    border : 0.2rem solid var(--darkpink);
+    border-radius: 1.5rem;
+}
+/* 800px / 16px = 50em */
+@media (max-width: 50em) {
+    article {
+        padding: 1rem;
+    }
+}
+article h3 {
+    margin: 2rem 0 0.5rem 0;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--darkpink);
+}
+article li {
+    margin-left: 2rem;
+}
+article ul {
+    margin: 0;
+    padding: 0;
+}
+/*Properties for the page Qui suis-je?*/
+.quisuisjeimg {
+    float: left;
+    width: 20%;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    border: 0.3rem solid var(--txanddarkbg);
+    border-radius: 1rem;
+}
+/*Properties for the page autoformation*/
+.articleheader p {
+    margin: 0 0 0.5rem 0;
+}
+.autoformationimg {
+    display: block;
+    width: 20%;
+    margin-right: 2rem;
+}
+.articleheader {
+    display: flex;
+    align-items: center;
+}
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+    .articleheader {
+        flex-direction: column;
+    }
+    .articleheader ul {
+        align-self: flex-start;
+    }
+    .autoformationimg {
+        margin: 0.5rem 0;
+    }
+}
+/*Properties for the page competences*/
+ul img {
+    display:block;
+    width: 90%;
+}
+/*Properties on the page CV*/
+#competences ul{
+    margin-left: 4rem;
+}
+#competences h3 {
+    text-transform: initial;
+    text-align: left;
+}
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+    #competences ul{
+        margin-left: 1rem;
+    }
+}

@@ -1,0 +1,73 @@
+/*__________________________________________
+---------Navigation on the pages------------
+*/
+.mainnav {
+    width: 100%;
+    margin-bottom: 2rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    border-top: 0.1rem solid var(--lightpink);
+    border-bottom: 0.1rem solid var(--lightpink);
+    text-transform: uppercase;
+}
+.mainnav a {
+    display: block;
+    color: var(--darkpink);
+    padding: 0.5rem 2rem;
+}
+.mainnav a:hover {
+    background: var(--darkpink);
+    color: var(--txandlightbg);
+    transition: background 0.5s;
+    transition: color 0.5s;
+}
+/* 800px / 16px = 50em */
+@media (max-width: 50em) {
+    .mainnav {
+        display: none;
+    }
+}
+/*_________________________________________
+-----------Contact list nav----------------
+*/
+.contactnav {
+    width: 100%;
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contactp {
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+}
+.contactp a {
+    font-size: 3rem;
+    color: var(--lightpink);
+}
+.contactp a:hover {
+    color: var(--darkpink);
+}
+.contactnav a {
+    display: block;
+    font-size: 3rem;
+    color: var(--txandlightbg);
+}
+/*animation*/
+.contactnav a:hover {
+    color: var(--darkpink);
+    transform: translateY(1rem);
+    transition: 0.8s;
+}
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+    .contactp {
+        font-size: 2.5rem;
+    }
+    .contactnav {
+        flex-direction: column;
+        align-items: center;
+    }
+}

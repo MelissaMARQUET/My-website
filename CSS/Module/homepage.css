@@ -1,0 +1,49 @@
+/*Header : pic and title*/
+#homepic {
+    display: block;
+    width: 40rem;
+    padding: 2rem;
+}
+.homepageheader {
+    display: flex;
+    align-items: center;
+}
+.homepagetitle {
+    display: flex;
+    flex-direction: column;
+    color: var(--darkpink);
+    font-size: 2.5rem;
+}
+.homepagetitle h2 {
+    color: var(--darkpink);
+    font-size: 3rem;
+}
+/*Title needs to be under the pic 
+when the screen is smaller*/ 
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+    #homepic {
+        width: auto;
+    }
+    .homepageheader {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+    .homepagemain {
+        width: 100%;
+        margin: 0;
+        padding: 0.5rem;
+    }
+    #homepic {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+/*Text*/
+.homepagemain p {
+    text-align: justify;
+}

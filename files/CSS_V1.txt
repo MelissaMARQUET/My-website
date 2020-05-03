@@ -1,0 +1,331 @@
+/* Styles to remove later */ 
+.inactivetext {
+    color: black;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+#choices {
+    list-style: none;
+}
+#choices a {
+    text-decoration: none;
+    color: black;
+}
+#choices a:hover{
+    color: blue;
+    font-weight: bolder;
+}
+.inactivepage {
+    background-image: url(img/linkinactive.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 60px;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+/* Pages general properties*/
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Book antika', 'Times New Roman', Times, serif;
+    font-size: 30px;
+    min-height: 100%;
+    background-image: linear-gradient(180deg, transparent 20%, black), url(img/body.jpg) ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* Shared fixed Header : image and title*/
+header {
+    background-image: linear-gradient(lightgray, pink);
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    border: 2px solid white;
+}
+#header {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header h1 {
+    font-size: 2rem;
+    font-family: cursive;
+    color: #DD026C;
+}
+/* Shared fixed Header : navigation toolbar*/
+#navbar ul{
+    border-top: 2px solid white;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    list-style: none;
+    display:flex;
+    justify-content: space-evenly;
+}
+#navbar a {
+    font-family: cursive;
+    font-size : 2rem;
+    text-transform: uppercase;
+    color:#DD026C;
+    text-decoration: none;
+}
+#navbar li:hover {
+    background-color: white;
+}
+#navbar li:hover a {
+    color: pink;
+    font-weight: bolder;
+}
+/* Asides */
+aside {
+    position: fixed;
+    left: 0;
+    top: 164px;
+    background-image : url(img/aside.png);
+    background-position: center;
+    background-size: cover;
+    width: 15%;
+    height: 100%;
+    text-align: left;
+}
+aside li {
+    margin-bottom: 100px;
+    list-style: none;
+}
+aside a {
+    font-family: cursive;
+    font-size : 2rem;
+    color: #666;
+    text-decoration: none;
+}
+aside a:hover {
+    font-weight: bolder;
+    color: white; 
+}
+/*Homepage*/ 
+#homepage {
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#homepagetext {
+    color: #FFAAD4;
+    line-height: 1.5;
+    text-align: justify;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#homepageh1 {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 4rem;
+    font-family: cursive;
+    color: #DD026C;
+    text-align: center;
+}
+#homepagefooter {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+/* Pages main part*/
+.main {
+    width: 85%;
+    margin-left: 15%;
+    margin-top: 164px;
+    margin-bottom: 6rem;
+    padding: 0 20px;
+    color: #FFAAD4;
+    line-height: 1.5;
+    text-align: justify;
+}
+section {
+    padding-top: 180px;
+}
+/* Pages main parts Titles*/
+main h1 {
+    margin: 0;
+    padding: 30px 0 0 0;
+    font-size: 4rem;
+    font-family: cursive;
+    color: #DD026C;
+    text-align: center;
+}
+h2 {
+    color: gray;
+    font-family: cursive;
+    font-size: 3rem;
+}
+h3 {
+    color: darkgray;
+    font-family: cursive;
+    font-size: 2.5rem;
+}
+h4 {
+    color: lightgray;
+    font-family: cursive;
+    font-size: 2rem;
+}
+/* Pages main parts links*/
+a {
+    color: lightskyblue;
+    text-decoration: none;
+}
+a:hover {
+    color: #005FBF ;
+    font-weight: bolder;
+    text-decoration: none;
+}
+/* Portfolio*/
+#loiventeenligne {
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+#loiventeenligne img {
+    margin-right: 20px;
+}
+.portfoliolinks {
+    color: lightskyblue;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+.portfoliolinks:hover {
+    color: #005FBF ;
+    font-weight: bolder;
+    text-decoration: none;
+}
+/* CV main part*/
+#CV {
+    margin-top: 164px;
+    padding-bottom: 6rem;
+    width: 100%;
+    font-size: 15px;
+}
+#CV h1 {
+    color: pink;
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+#cvbody {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+#cvbody article {
+    width: 48%;
+    margin: 1%;
+    background-color: ivory;
+    border: 3px solid pink;
+    border-radius: 15px;
+}
+#CV h2 {
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 0 2%;
+}
+#CV p {
+    color: blueviolet;
+    font-style: italic;
+}
+/* CV footer*/
+#cvdownload {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-content: flex-start;
+    padding-top: 10px;
+}
+#cvdownload a {
+    display: block;
+    background-color: lightgray;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid darkgrey;
+    border-bottom: 1px solid darkgrey;
+    color: #DD026C;
+    text-decoration: none;
+    width: 300px;
+    margin-right: 20px;
+}
+#cvdownload a:hover {
+    font-weight: bolder;
+}
+#cvfooter {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+/*Shared Footer*/
+footer {
+    position: fixed;
+    bottom: 0;
+    color: white;
+    font-family: cursive;
+    font-size: 1rem;
+    background-color: black;
+    margin-left: 15%;
+    width: 85%;
+}
+#footer {
+    text-align: center;
+}
+/* Inactive Form */
+form {
+    margin: auto;
+    width: 800px;
+    border: 3px solid lightgray;
+    border-radius: 30px;
+    background-color: pink;
+    box-shadow: 12px 6px 8px darkgray;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+label {
+    display: block;
+}
+input {
+    display: block;
+    background-color: lightgray;
+}
+textarea {
+    background-color: lightgray;
+}
+input[type="submit"] {
+    display: block;
+    margin-top: 2rem;
+    width: 50%;
+    font-size: 1em;
+    color: inherit;
+    font-family: inherit;
+    padding: 2px;
+    opacity: 1;
+}

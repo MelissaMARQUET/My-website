@@ -1,0 +1,90 @@
+/*__________Navigation for screens larger______
+____________________than 800px_________________*/
+/*Layout of the headernav*/
+.header img {
+    display: block;
+    margin: 0 auto;
+}
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    border-right: 0.1rem solid var(--txandlightbg);
+    background: var(--txanddarkbg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*The h1 title is divided in two parts name + text*/
+.header h1 {
+    margin-bottom: 8rem;
+    font-size: 2rem;
+    color: var(--lightpink);
+    text-align: center;
+    font-weight: 300;
+}
+.name {
+    font-size: 2.5rem;
+}
+/*Label and input need to be hidden*/
+.menu-mobile, #menu-mobile {
+    display: none;
+}
+/*The ul for the navigation*/
+.headernav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.headernav a {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    border-top: 0.1rem solid var(--txandlightbg);
+    text-transform: uppercase;
+    color: var(--text);
+}
+.headernav:last-child {
+    border-bottom: 0.1rem solid var(--txandlightbg);
+}
+.headernav a:hover {
+    background: var(--txandlightbg);
+    color: black;
+    transition: color .5s;
+    transition: background .5s;
+}
+/*__________Menu screen___________
+____________under 800px___________*/
+/* 800px / 16px = 50em */
+@media (max-width: 50em) {
+    .header {
+        position: initial;
+        width: 100%;
+        border: none;
+    }
+    .header img, .headernav {
+        display: none;
+    }
+    .header h1 {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-mobile {
+        display:block;
+        width: 100%;
+        margin: 0;
+        border: 0.1rem solid var(--txandlightbg);
+        background: var(--lightpink);
+        color: var(--txanddarkbg);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+    nav input[type=checkbox]:checked ~ ul {
+        display: block;
+    }
+}

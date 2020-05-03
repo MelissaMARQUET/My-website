@@ -1,0 +1,33 @@
+section {
+    width: 70%;
+    margin: 4rem auto;
+    padding: 2rem;
+    border: 3px solid var(--lightpink);
+    border-radius: 15px;
+    background-color: var(--txandlightbg);
+    text-align: justify;
+    color : black;
+}
+/* 1400px / 16px = 87.5em */
+@media (max-width: 87.5em) {
+    section {
+        width: 90%;
+    }
+}
+/* 800px / 16px = 50em */
+@media (max-width: 50em) {
+    section {
+        width: 100%;
+    }
+}
+section h2 {
+    margin: 0 2%;
+    border-bottom: 1px solid black;
+    color: black;
+    font-weight: bold;
+    font-size : 1.4em;
+    text-align: center;
+}
+section p {
+    margin-top: 3rem;
+}

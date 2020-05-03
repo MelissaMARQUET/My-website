@@ -1,0 +1,48 @@
+/*_________Settings for an easy size 
+calculation within the site ___________*/
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+/*Different font-size settings 
+for the responsive*/
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+    html {
+    font-size: 58%;
+    }
+}
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+    html {
+    font-size: 55%;
+    }
+}
+body {
+    background: var(--mainbg);
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
+    color: var(--txandlightbg);
+    line-height: 2;
+    font-weight: 300;
+}
+h1 {
+    font-size: 5rem;
+    color: var(--darkpink);
+    text-align: center;
+}
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--linkhover);
+    font-weight: bold;
+}

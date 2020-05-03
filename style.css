@@ -1,0 +1,45 @@
+/* CSS organized with the SMACSS method */
+/*___________BASE____________*/
+@import url(CSS/Base/fonts.css);
+@import url(CSS/Base/setting-reset.css);
+@import url(CSS/Base/colors.css);
+@import url(CSS/Base/general-properties.css);
+/*__________LAYOUT___________*/
+@import url(CSS/Layout/main.css);
+/*__________MODULE___________*/
+/*Main modules*/
+@import url(CSS/Module/headernav.css);
+@import url(CSS/Module/homepage.css);
+@import url(CSS/Module/footer.css);
+@import url(CSS/Module/section.css);
+@import url(CSS/Module/button.css);
+@import url(CSS/Module/article.css);
+/*Navbars inside the pages*/
+@import url(CSS/Module/navbars.css);
+/*Table is used for the portfolio*/
+@import url(CSS/Module/table.css);
+@import url(CSS/Module/form.css);
+/*_________RESPONSIVE_________
+
+Breakpoints used for resposive :
+
+/* 1400px / 16px = 87.5em *
+@media (max-width: 87.5em) {
+}
+
+/* 1200px / 16px = 75em *
+@media (max-width: 75em) {
+}
+
+/* 980px / 16px = 61.25em *
+@media (max-width: 61.25em) {
+}
+
+/* 800px / 16px = 50em *
+@media (max-width: 50em) {
+}
+
+/* 460px / 16px = 28.75em *
+@media (max-width: 28.75em) {
+}
+*/

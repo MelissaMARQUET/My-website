@@ -1,0 +1,26 @@
+/*Main needs a padding because the nav
+is fixed on the left*/
+main {
+    min-height: 95vh;
+    padding: 3rem 25rem 3rem 310px;
+}
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    main {
+        padding-right: 3rem;
+    }
+}
+/* 800px / 16px = 50em */
+@media (max-width: 50em) {
+    main {
+        padding-left: 3rem;
+    }
+}
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+    main {
+        width: 100%;
+        margin: 0;
+        padding: 0.5rem;
+    }
+}
